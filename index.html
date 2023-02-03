@@ -7,6 +7,9 @@
         <title>Document</title>
     </head>
     <body>
+        <input type="text" id="aplha">
+        <input type="text" id="gamma">
+        <input type="text" id="betha">
        <script>
             if (window.DeviceOrientationEvent) {
                 window.addEventListener("deviceorientation", (event) => {
@@ -20,7 +23,9 @@
 
                 const handleOrientationEvent = (frontToBack, leftToRight, rotateDegrees) => {
                     
-                    console.log(frontToBack,leftToRight,rotateDegrees);
+                    document.getElementById('alpha').value = rotateDegrees;
+                    document.getElementById('gamma').value = leftToRight;
+                    document.getElementById('betha').value = frontToBack;
 
                 };
        </script> 
