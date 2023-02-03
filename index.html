@@ -11,6 +11,8 @@
         <input type="text" id="gamma">
         <input type="text" id="betha">
        <script>
+            /*
+            
             window.matchMedia("(orientation: portrait)").addEventListener("change" , e =>{
 
                 const portrait = e.matches;
@@ -27,6 +29,13 @@
                 }
 
             });
+            */
+
+            window.addEventListener('deviceorientation' , function(e){
+
+                alert(e.alpha , e.beta , e.gamma)
+
+            })
 
 
        </script> 
