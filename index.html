@@ -63,7 +63,7 @@
                     updateFieldIfNotNull('Orientation_g', event.gamma);
                 }
 
-                window.removeEventListener("deviceorientation", handleOrientation);
+                window.addEventListener("deviceorientation", handleOrientation);
 
             </script>
     </body>
